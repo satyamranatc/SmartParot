@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subjects</title>
+    <title>Chapters</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./Subjects.css">
+    <link rel="stylesheet" href="./Topic.css">
 </head>
 <body>
     <nav class="navbar">
@@ -16,24 +16,27 @@
             <div class="nav-links">
                 <a href="/FrontEnd/Home/Home.html">Home</a>
                 <a href="/FrontEnd/Feed/Subjects/Subjects.html">Feed</a>
-                <a href="#">About</a>
+                <a href="">About</a>
                 <a href="#">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="hero">
+    <main id="hero">
         <section>
-            <h1>Subjects</h1>
-            <p>Discover the various subjects available on Smart Parrot's platform.</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for a chapter...">
+                <button type="submit" id="searchButton">Search</button>
+            </div>
+            <h2>All Chapters</h2>
         </section>
 
-        <section id = "SubjectContainer">
-           
+        <section id = "TopicContainer">
+         
         </section>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./Subjects.js"></script>
+    <script src="./Topic.js"></script>
 </body>
 </html>
