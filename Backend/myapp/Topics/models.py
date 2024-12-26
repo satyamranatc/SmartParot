@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Topics(models.Model):
+    SubjectId = models.IntegerField()
+    TopicName = models.CharField(max_length=100)
+    TopicDesc = models.TextField()
