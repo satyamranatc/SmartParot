@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from .models import Subjects
 from .serializers import SubjectSerializer
 
-@api_view(["GET"])
+@api_view(["GET", "POST"])
 def getSubjects(requests):
     
     if requests.method == "GET":
